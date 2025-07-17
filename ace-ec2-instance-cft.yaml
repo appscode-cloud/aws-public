@@ -159,7 +159,7 @@ Resources:
           SubnetId:
             Ref: "Subnet"
       BlockDeviceMappings:
-        - DeviceName: /dev/sdf #/dev/sdf root volume for ubuntu, /dev/xvda for amzn-linux
+        - DeviceName: /dev/sda1 #/dev/sda1 root volume for ubuntu, /dev/xvda for amzn-linux
           Ebs:
             VolumeSize: 100 # Specify the size of the root volume in GB
             VolumeType: gp3
